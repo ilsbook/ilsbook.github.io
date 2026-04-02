@@ -1,16 +1,31 @@
-# React + Vite
+# Integrated Language Skills for Higher Education (CEFR B1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dr. Sevinj Aghahuseyn Hasanova** · Associate Professor, Chair of English Lexicology, Azerbaijan University of Languages
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This textbook is a **CEFR B1** teaching resource for undergraduates: listening, reading, speaking, and writing are integrated in each unit, with authentic input, task-based work, and careful support for critical thinking and academic writing. Methodology aligns with the CEFR and draws on the Cambridge TKT framework, communicative language teaching, and learner-centred classroom practice.
 
-## React Compiler
+**This repository** hosts the companion website: unit listening tracks, downloads, and pages about the book and the author.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Live site:** [ilsbook on GitHub Pages](https://eldarhasanov079.github.io/ilsbook/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL shown in the terminal (typically `http://localhost:5173`).
+
+| Command        | Purpose              |
+| -------------- | -------------------- |
+| `npm run build` | Production build     |
+| `npm run preview` | Preview the build  |
+| `npm run lint`  | Run ESLint           |
+| `npm run deploy` | Publish to `gh-pages` (after `npm run build`) |
+
+Stack: **React**, **Vite**, **React Router**.
