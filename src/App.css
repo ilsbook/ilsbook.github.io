@@ -53,6 +53,8 @@
   text-decoration: none;
   color: var(--british-blue);
   transition: opacity 0.2s;
+  min-width: 0;
+  flex: 1 1 12rem;
 }
 
 .logo-link:hover,
@@ -73,16 +75,18 @@
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 1.05rem + 0.35vw, 1.25rem);
   font-weight: 600;
   color: var(--british-blue);
   margin: 0;
+  line-height: 1.22;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 0;
+  flex-wrap: wrap;
+  gap: 0.375rem;
   margin: 0;
   padding: 0;
 }
@@ -330,7 +334,14 @@
   outline-offset: 2px;
 }
 
-/* About Page */
+/* About pages */
+.about-page .page-subtitle {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+}
+
 .about-content {
   max-width: 700px;
   margin: 0 auto;
@@ -341,11 +352,19 @@
   box-shadow: var(--shadow-lg);
 }
 
-.book-info {
+.book-hero,
+.author-hero {
   text-align: center;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--border-color);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    165deg,
+    rgba(1, 33, 105, 0.08) 0%,
+    rgba(1, 33, 105, 0.03) 50%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  box-shadow: inset 0 0 0 1px rgba(1, 33, 105, 0.09);
+  border-top: 3px solid var(--british-red);
 }
 
 .book-title {
@@ -353,24 +372,156 @@
   font-weight: 600;
   color: var(--british-blue);
   margin-bottom: 0.75rem;
-  line-height: 1.4;
+  line-height: 1.35;
+}
+
+.book-hero .book-title {
+  margin-bottom: 0;
 }
 
 .book-author {
   font-size: 1.125rem;
   color: var(--text-light);
   font-style: italic;
+  margin: 0;
 }
 
-.author-info {
-  text-align: center;
+.author-hero__name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--british-blue);
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
 }
 
-.author-title {
-  font-size: 1.125rem;
+.author-hero__role {
+  font-size: 1.0625rem;
   color: var(--text-dark);
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.about-text-block {
+  text-align: left;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.about-text-block--flush {
+  margin-top: 2rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.about-text-block p {
+  font-size: 1.0625rem;
+  color: var(--text-dark);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.about-text-block p:last-child {
+  margin-bottom: 0;
+}
+
+.about-prose p {
+  font-size: 1.0625rem;
+  line-height: 1.82;
+  color: var(--text-dark);
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.about-signature {
+  margin-top: 2.5rem;
+  padding: 1.75rem 0 0 1.35rem;
+  border-top: 2px solid var(--border-color);
+  border-left: 3px solid var(--british-red);
+  text-align: left;
+}
+
+.about-signature__name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--british-blue);
+  margin: 0 0 0.65rem;
+}
+
+.about-signature__role {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.author-credentials p {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--text-dark);
+  margin: 0 0 0.2rem;
+}
+
+.author-credentials p:last-child {
+  margin-bottom: 0;
+}
+
+.author-hero--credentials .author-hero__name {
+  margin-bottom: 1rem;
+}
+
+.author-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.author-actions .scholar-link {
+  margin-top: 0;
+}
+
+.about-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.about-footer-nav__link {
+  color: var(--british-blue);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.about-footer-nav__link:hover,
+.about-footer-nav__link:focus {
+  color: var(--british-light-blue);
+  outline: none;
+}
+
+.about-footer-nav__link--secondary {
+  color: var(--text-light);
+}
+
+.about-footer-nav__link--secondary:hover,
+.about-footer-nav__link--secondary:focus {
+  color: var(--british-blue);
+}
+
+.about-footer-nav__link:focus-visible {
+  outline: 2px solid var(--british-blue);
+  outline-offset: 2px;
 }
 
 .scholar-link {
@@ -423,8 +574,10 @@
 }
 
 .footer p {
-  margin: 0;
-  font-size: 0.875rem;
+  margin: 0 auto;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  max-width: 52rem;
 }
 
 /* Mobile Responsiveness */
@@ -478,8 +631,23 @@
     padding: 2rem 1.5rem;
   }
 
+  .book-hero,
+  .author-hero {
+    padding: 1.5rem 1.25rem;
+  }
+
   .book-title {
     font-size: 1.5rem;
+  }
+
+  .author-hero__name {
+    font-size: 1.2rem;
+  }
+
+  .about-footer-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 

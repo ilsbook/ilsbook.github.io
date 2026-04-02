@@ -1,26 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { BOOK_TITLE } from "../constants/bookMeta";
 
 export default function AboutAuthor() {
   return (
     <div className="about-page">
       <div className="page-header">
-        <h2 className="page-title">About</h2>
+        <h2 className="page-title">About the Author</h2>
+        <p className="page-subtitle">Author of {BOOK_TITLE}</p>
       </div>
 
-      <div className="about-content">
-        <div className="book-info">
-          <h3 className="book-title">Integrated Language Skills for Higher Education</h3>
-          <p className="book-author">by Sevinj Agahuseyn qizi Hasanova</p>
-        </div>
+      <article className="about-content about-content--author" aria-labelledby="about-author-heading">
+        <header className="author-hero author-hero--credentials" id="about-author-heading">
+          <p className="author-hero__name">Dr. Sevinj Aghahuseyn Hasanova</p>
+          <div className="author-credentials">
+            <p>Associate Professor of the</p>
+            <p>Chair of English Lexicology</p>
+            <p>Azerbaijan University of Languages</p>
+          </div>
+        </header>
 
-        <div className="author-info">
-          <p className="author-title">
-            Associate Professor<br />
-            Azerbaijani University of Languages
-          </p>
-          <a 
-            href="https://scholar.google.com/citations?user=OIcH4IgAAAAJ&hl=ru" 
-            target="_blank" 
+        <div className="author-actions">
+          <a
+            href="https://scholar.google.com/citations?user=OIcH4IgAAAAJ&hl=ru"
+            target="_blank"
             rel="noopener noreferrer"
             className="scholar-link"
             aria-label="View author's Google Scholar profile"
@@ -31,8 +34,16 @@ export default function AboutAuthor() {
             <span>Google Scholar</span>
           </a>
         </div>
-      </div>
+
+        <footer className="about-footer-nav">
+          <Link to="/" className="about-footer-nav__link about-footer-nav__link--secondary">
+            ← Listening exercises
+          </Link>
+          <Link to="/about/book" className="about-footer-nav__link">
+            About the book →
+          </Link>
+        </footer>
+      </article>
     </div>
   );
 }
-

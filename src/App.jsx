@@ -1,12 +1,15 @@
 import React from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import Listenings from './pages/Listenings';
 import Unit from './pages/Unit';
+import AboutBook from './pages/AboutBook';
 import AboutAuthor from './pages/AboutAuthor';
+import { BOOK_TITLE } from './constants/bookMeta';
 import './App.css';
 
 function App() {
   const location = useLocation();
+  const path = location.pathname;
 
   return (
     <div className="app">
@@ -14,7 +17,7 @@ function App() {
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <Link to="/" className="logo-link" aria-label="Home">
             <span className="flag-emoji" role="img" aria-label="British flag">🇬🇧</span>
-            <h1 className="site-title">Integrated Language Skills</h1>
+            <h1 className="site-title">{BOOK_TITLE}</h1>
           </Link>
           <ul className="nav-links">
             <li>
@@ -27,12 +30,21 @@ function App() {
               </Link>
             </li>
             <li>
-              <Link 
-                to="/about" 
-                className={location.pathname === '/about' ? 'active' : ''}
-                aria-current={location.pathname === '/about' ? 'page' : undefined}
+              <Link
+                to="/about/book"
+                className={path === '/about/book' ? 'active' : ''}
+                aria-current={path === '/about/book' ? 'page' : undefined}
               >
-                About
+                About the Book
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about/author"
+                className={path === '/about/author' ? 'active' : ''}
+                aria-current={path === '/about/author' ? 'page' : undefined}
+              >
+                About the Author
               </Link>
             </li>
           </ul>
@@ -43,12 +55,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Listenings />} />
           <Route path="/unit/:unitId" element={<Unit />} />
-          <Route path="/about" element={<AboutAuthor />} />
+          <Route path="/about" element={<Navigate to="/about/book" replace />} />
+          <Route path="/about/book" element={<AboutBook />} />
+          <Route path="/about/author" element={<AboutAuthor />} />
         </Routes>
       </main>
 
       <footer className="footer" role="contentinfo">
-        <p>&copy; {new Date().getFullYear()} Integrated Language Skills for Higher Education</p>
+        <p>&copy; {new Date().getFullYear()} {BOOK_TITLE}</p>
       </footer>
     </div>
   );
