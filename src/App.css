@@ -739,8 +739,7 @@
   box-shadow: var(--shadow-lg);
 }
 
-.book-hero,
-.author-hero {
+.book-hero {
   text-align: center;
   padding: 2rem 1.5rem;
   border-radius: 10px;
@@ -773,19 +772,94 @@
   margin: 0;
 }
 
-.author-hero__name {
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--british-blue);
-  line-height: 1.35;
-  margin: 0 0 0.75rem;
+/* About the Author — profile */
+.about-content.author-profile {
+  max-width: 46rem;
+  border-color: var(--cover-navy);
+  border-top: 4px solid var(--cover-accent);
+  padding: 2.5rem 2rem 2.75rem;
 }
 
-.author-hero__role {
-  font-size: 1.0625rem;
-  color: var(--text-dark);
-  line-height: 1.65;
+.author-masthead {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.author-masthead__name {
+  font-size: clamp(1.25rem, 2.8vw, 1.5rem);
+  font-weight: 700;
+  color: var(--cover-navy);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+.author-masthead__affiliation {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+  max-width: 38rem;
+}
+
+.author-masthead__actions {
   margin: 0;
+}
+
+.scholar-link--masthead {
+  margin-top: 0;
+}
+
+.author-bio {
+  margin-top: 1.75rem;
+}
+
+.author-bio__section {
+  margin-top: 1.5rem;
+}
+
+.author-bio__section--lead {
+  margin-top: 0;
+}
+
+.author-bio__heading {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cover-navy);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid rgba(228, 89, 42, 0.4);
+}
+
+.author-bio__section p {
+  font-size: 1.03125rem;
+  line-height: 1.78;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.author-bio__section p + p {
+  margin-top: 0.75rem;
+}
+
+.author-research-list {
+  margin: 0;
+  padding: 0 0 0 1.35rem;
+  font-size: 1.03125rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+
+.author-research-list li {
+  margin-bottom: 0.4rem;
+  padding-left: 0.25rem;
+}
+
+.author-research-list li:last-child {
+  margin-bottom: 0;
 }
 
 .about-text-block {
@@ -844,31 +918,6 @@
   line-height: 1.65;
   color: var(--text-dark);
   margin: 0;
-}
-
-.author-credentials p {
-  font-size: 1.0625rem;
-  line-height: 1.55;
-  color: var(--text-dark);
-  margin: 0 0 0.2rem;
-}
-
-.author-credentials p:last-child {
-  margin-bottom: 0;
-}
-
-.author-hero--credentials .author-hero__name {
-  margin-bottom: 1rem;
-}
-
-.author-actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.75rem;
-}
-
-.author-actions .scholar-link {
-  margin-top: 0;
 }
 
 .about-footer-nav {
@@ -1002,8 +1051,7 @@
     padding: 2rem 1.5rem;
   }
 
-  .book-hero,
-  .author-hero {
+  .book-hero {
     padding: 1.5rem 1.25rem;
   }
 
@@ -1011,8 +1059,12 @@
     font-size: 1.5rem;
   }
 
-  .author-hero__name {
-    font-size: 1.2rem;
+  .about-content.author-profile {
+    padding: 1.75rem 1.25rem 2rem;
+  }
+
+  .author-bio__heading {
+    letter-spacing: 0.08em;
   }
 
   .about-footer-nav {
