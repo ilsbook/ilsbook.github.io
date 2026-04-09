@@ -62,7 +62,7 @@ export default function AboutAuthor() {
               <span>Google Scholar</span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/sevinj-hasanova-96771722a/"
               className="scholar-link scholar-link--masthead social-link social-link--linkedin"
               aria-label="Author LinkedIn profile link placeholder"
             >
