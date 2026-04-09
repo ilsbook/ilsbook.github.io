@@ -56,7 +56,7 @@ export default function AboutAuthor() {
               >
                 <path
                   d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
-                  fill="#4285F4"
+                  fill="currentColor"
                 />
               </svg>
               <span>Google Scholar</span>
@@ -75,7 +75,7 @@ export default function AboutAuthor() {
               >
                 <path
                   d="M4 3.5A1.5 1.5 0 0 1 5.5 2h13A1.5 1.5 0 0 1 20 3.5v17a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 20.5v-17zm3.05 6.55h2.35V18H7.05v-7.95zM8.22 6.1a1.36 1.36 0 1 0 0 2.72 1.36 1.36 0 0 0 0-2.72zM11 10.05h2.26v1.09h.03c.32-.6 1.1-1.24 2.26-1.24 2.41 0 2.85 1.58 2.85 3.64V18h-2.35v-3.78c0-.9-.02-2.05-1.24-2.05-1.25 0-1.44.98-1.44 1.99V18H11v-7.95z"
-                  fill="#0A66C2"
+                  fill="currentColor"
                 />
               </svg>
               <span>LinkedIn</span>
