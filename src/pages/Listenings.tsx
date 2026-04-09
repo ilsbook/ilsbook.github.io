@@ -6,7 +6,7 @@ export default function Listenings() {
   return (
     <div className="listenings-page">
       <div className="page-header">
-        <h2 className="page-title">Listening Exercises</h2>
+        <h2 className="page-title">Listening Tracks</h2>
         <p className="page-subtitle">
           <Link to="/" className="listenings-home-link">
             Welcome page
