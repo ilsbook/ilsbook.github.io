@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { units } from "../data/listenings";
 
 const getAssetUrl = (path: string): string => {
-  // Vite's BASE_URL already includes trailing slash (e.g., "/ilsbook/")
+  // Vite's BASE_URL already includes trailing slash (e.g., "/")
   const baseUrl = (import.meta as any).env?.BASE_URL || "/";
   // Remove leading slash from path if present, then combine with base
   const cleanPath = path.replace(/^\//, "");

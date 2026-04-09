@@ -8,4 +8,4 @@ This textbook is a **CEFR B1** teaching resource for undergraduates: listening, 
 
 **This repository** hosts the companion website: unit listening tracks, downloads, and pages about the book and the author.
 
-**Live site:** [ilsbook on GitHub Pages](https://eldarhasanov079.github.io/ilsbook/)
+**Live site:** [ilsb1.github.io](https://ilsb1.github.io/)
