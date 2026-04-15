@@ -1,9 +1,63 @@
 	LISTENING SCRIPTS UNITS 1-12	
-🎧 Unit 0 Listening Script: Placeholder
+🎧 Unit 0 Listening Script: A Tourist in Baku
 
-Characters: TBD
+Characters: Mr Spencer (a tourist from London), Aliya, Farida, and Rashid (local students)
 
-Script for the new Unit 1 will be added soon.
+Mr Spencer: Excuse me, can you help me, please?
+
+Aliya: Yes, of course.
+
+Mr Spencer: Thank you. My name is David Spencer. I’m from London, and this is my first time in Baku. I want to visit some famous places, but I’m not sure where to start.
+
+Farida: Welcome to Baku, Mr Spencer! There are many beautiful places to see here.
+
+Mr Spencer: That’s good to hear. Can you recommend some places?
+
+Rashid: Yes. First, you should visit the Old City. It is one of the most famous parts of Baku. It is very old and very beautiful.
+
+Mr Spencer: That sounds interesting. What can I see there?
+
+Aliya: You can see the Maiden Tower there. It is one of the symbols of Baku. Many tourists go there and take photos.
+
+Mr Spencer: Great! Is it far from here?
+
+Farida: No, it isn’t very far. You can go by taxi, bus, or even walk if you like walking.
+
+Mr Spencer: Wonderful. And what else should I see?
+
+Rashid: You should also visit the Carpet Museum. It is near the sea, on the Boulevard.
+
+Mr Spencer: The Boulevard?
+
+Aliya: Yes, Baku Boulevard is a long and lovely place near the Caspian Sea. People walk there, ride bikes, and enjoy the view. It is very popular in the evening.
+
+Mr Spencer: That sounds lovely. I really enjoy walking by the sea.
+
+Farida: Then you will like the Boulevard very much. From there, you can also see the Flame Towers. They are modern, tall buildings and look very impressive, especially at night.
+
+Mr Spencer: Ah yes, I saw them from my hotel window. They look amazing.
+
+Mr Spencer: And what about the Heydar Aliyev Center? I saw a picture of it online.
+
+Rashid: Yes, you should definitely go there too. It is one of the most interesting and unusual buildings in Baku. It was designed by a famous architect, Zaha Hadid.
+
+Mr Spencer: Is it easy to get there?
+
+Aliya: Yes, it is. You can take a taxi quite easily.
+
+Mr Spencer: And Victory Park? Someone at the hotel mentioned it.
+
+Farida: Yes, Victory Park is also worth visiting. It is a nice place to walk and relax, and it is important for the city.
+
+Mr Spencer: Thank you very much. You have given me so many good ideas.
+
+Rashid: You’re welcome.
+
+Aliya: We hope you enjoy your time in Baku.
+
+Mr Spencer: I’m sure I will. The city already seems very friendly.
+
+Farida: Enjoy your trip!
 
 🎧 UNIt 1 Listening script: ‘MindTalk Radio’
 
