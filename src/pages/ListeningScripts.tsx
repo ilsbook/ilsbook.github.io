@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { scriptUnitNumbers } from "../data/listeningScripts";
+import { displayUnits } from "../data/listenings";
 
 export default function ListeningScripts() {
   return (
@@ -19,15 +20,17 @@ export default function ListeningScripts() {
       </div>
 
       <div className="units-grid" role="list">
-        {scriptUnitNumbers.map((unitNum) => (
+        {displayUnits
+          .filter(({ internalUnitId }) => scriptUnitNumbers.includes(internalUnitId))
+          .map(({ displayUnitNumber, internalUnitId }) => (
           <Link
-            key={unitNum}
-            to={`/scripts/unit/${unitNum}`}
+            key={internalUnitId}
+            to={`/scripts/unit/${internalUnitId}`}
             className="unit-card"
             role="listitem"
-            aria-label={`Open script for Unit ${unitNum}`}
+            aria-label={`Open script for Unit ${displayUnitNumber}`}
           >
-            <div className="unit-number">Unit {unitNum}</div>
+            <div className="unit-number">Unit {displayUnitNumber}</div>
             <div className="unit-arrow" aria-hidden="true">
               →
             </div>

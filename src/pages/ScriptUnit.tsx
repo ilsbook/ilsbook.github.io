@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { unitScripts } from "../data/listeningScripts";
+import { getDisplayUnitNumber } from "../data/listenings";
 
 export default function ScriptUnit() {
   const { unitId } = useParams();
   const unitNum = Number(unitId);
+  const displayUnitNum = getDisplayUnitNumber(unitNum);
   const script = unitScripts[unitNum];
 
   if (!script) {
@@ -27,7 +29,7 @@ export default function ScriptUnit() {
       </Link>
 
       <header className="page-header script-page-header">
-        <h2 className="page-title">Unit {script.unit}</h2>
+        <h2 className="page-title">Unit {displayUnitNum}</h2>
         <p className="page-subtitle script-title">{script.title}</p>
       </header>
 
@@ -35,7 +37,7 @@ export default function ScriptUnit() {
         <h3 className="script-track-links__title">Related listening tracks</h3>
         <div className="script-track-links__list">
           <Link to={`/unit/${script.unit}`} className="script-track-link">
-            Open Unit {script.unit} Listening Tracks
+            Open Unit {displayUnitNum} Listening Tracks
           </Link>
         </div>
       </section>

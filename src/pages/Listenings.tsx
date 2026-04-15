@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { unitNumbers } from "../data/listenings";
+import { displayUnits } from "../data/listenings";
 
 export default function Listenings() {
   return (
@@ -32,21 +32,21 @@ export default function Listenings() {
             Download all listening tracks (.zip)
           </a>
           <p className="listenings-download-note">
-            For offline use: one ZIP file with all Unit 1-10 listening tracks.
+            For offline use: one ZIP file with all Unit 1-12 listening tracks.
           </p>
         </div>
       </div>
 
       <div className="units-grid" role="list">
-        {unitNumbers.map((unitNum) => (
+        {displayUnits.map(({ displayUnitNumber, internalUnitId }) => (
           <Link
-            key={unitNum}
-            to={`/unit/${unitNum}`}
+            key={internalUnitId}
+            to={`/unit/${internalUnitId}`}
             className="unit-card"
             role="listitem"
-            aria-label={`Unit ${unitNum}`}
+            aria-label={`Unit ${displayUnitNumber}`}
           >
-            <div className="unit-number">Unit {unitNum}</div>
+            <div className="unit-number">Unit {displayUnitNumber}</div>
             <div className="unit-arrow" aria-hidden="true">→</div>
           </Link>
         ))}

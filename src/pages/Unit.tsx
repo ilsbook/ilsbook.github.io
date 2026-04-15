@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { units } from "../data/listenings";
+import { getDisplayUnitNumber, units } from "../data/listenings";
 import { usePlayer } from "../player/PlayerContext";
 
 const getAssetUrl = (path: string): string => {
@@ -14,6 +14,7 @@ const getAssetUrl = (path: string): string => {
 export default function Unit() {
   const { unitId } = useParams();
   const unitNum = Number(unitId);
+  const displayUnitNum = getDisplayUnitNumber(unitNum);
   const tracks = units[unitNum];
   const { playUnitQueue } = usePlayer();
 
@@ -35,43 +36,51 @@ export default function Unit() {
       </Link>
       
       <div className="page-header">
-        <h2 className="page-title">Unit {unitNum}</h2>
+        <h2 className="page-title">Unit {displayUnitNum}</h2>
       </div>
 
       <div className="tracks-list" role="list">
         {tracks.map((t, index) => (
-          <div key={t.file} className="track-item" role="listitem">
+          <div key={`${t.file || "placeholder"}-${index}`} className="track-item" role="listitem">
             <h3 className="track-title">{t.title}</h3>
 
-            <div className="track-actions">
-              <button
-                type="button"
-                className="btn-primary track-play-btn"
-                onClick={() => void playUnitQueue(unitNum, tracks, index)}
-                aria-label={`Play ${t.title} in sticky player`}
-              >
-                Play in sticky player
-              </button>
-              <p className="track-actions__hint">
-                Keep listening while you browse other pages.
-              </p>
-            </div>
+            {t.file ? (
+              <>
+                <div className="track-actions">
+                  <button
+                    type="button"
+                    className="btn-primary track-play-btn"
+                    onClick={() => void playUnitQueue(unitNum, tracks, index)}
+                    aria-label={`Play ${t.title} in sticky player`}
+                  >
+                    Play in sticky player
+                  </button>
+                  <p className="track-actions__hint">
+                    Keep listening while you browse other pages.
+                  </p>
+                </div>
 
-            <a
-              href={getAssetUrl(t.file)}
-              download
-              className="download-link"
-              aria-label={`Download ${t.title}`}
-            >
-              Download MP3
-            </a>
+                <a
+                  href={getAssetUrl(t.file)}
+                  download
+                  className="download-link"
+                  aria-label={`Download ${t.title}`}
+                >
+                  Download MP3
+                </a>
+              </>
+            ) : (
+              <p className="track-actions__hint">
+                Recording will be added soon.
+              </p>
+            )}
 
             <Link
               to={`/scripts/unit/${unitNum}`}
               className="track-script-link"
-              aria-label={`Read the listening script for Unit ${unitNum}`}
+              aria-label={`Read the listening script for Unit ${displayUnitNum}`}
             >
-              Read the full listening script for Unit {unitNum}
+              Read the full listening script for Unit {displayUnitNum}
             </Link>
           </div>
         ))}

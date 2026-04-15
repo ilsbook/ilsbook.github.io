@@ -20,6 +20,7 @@ export type UnitScript = {
 };
 
 const titleFallback: Record<number, string> = {
+  0: "Unit 1 placeholder script",
   1: "MindTalk Radio: Who We Are and Who We Admire",
   2: "Academic Success Seminar: Learning Styles and Study Strategies",
   3: "Future Tech Cafe Chat",
@@ -30,6 +31,7 @@ const titleFallback: Record<number, string> = {
   8: "Budget vs Luxury Travel and Travel Agency Advertisements",
   9: "International Weather Forecast",
   10: "Environmental Challenges and Renewable Solutions",
+  12: "A Future in Teaching — City or Rural School?",
 };
 
 const parseRawSections = (raw: string): Record<number, { title: string; text: string }> => {
