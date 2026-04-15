@@ -5,3 +5,8 @@ declare module "*.JPG" {
   export default src;
 }
 
+declare module "*.jpg" {
+  const src: string;
+  export default src;
+}
+

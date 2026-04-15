@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BOOK_TITLE } from "../constants/bookMeta";
-import authorPhoto from "../assets/author.jpg";
+const authorPhoto = new URL("../assets/author.jpg", import.meta.url).href;
 
 const RESEARCH_INTERESTS = [
   "Linguistics",
