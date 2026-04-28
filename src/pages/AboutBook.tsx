@@ -6,7 +6,7 @@ export default function AboutBook() {
   return (
     <div className="about-page">
       <div className="page-header">
-        <h2 className="page-title">About the Book</h2>
+        <h2 className="page-title">About the Textbook</h2>
         <p className="page-subtitle">{BOOK_TITLE}</p>
       </div>
 
@@ -17,22 +17,22 @@ export default function AboutBook() {
 
         <div className="about-prose about-text-block about-text-block--flush">
           <p>
-            It is my pleasure to present {BOOK_TITLE}, a teaching resource created to support
-            undergraduate learners in their academic journey of developing confident and purposeful
-            communication. This book is shaped by over twenty years of my personal experience in
-            teaching English at all levels as well as by long-term observation of B1 learners&apos;
-            studying styles, interaction patterns, educational challenges and academic progress
-            within higher education context.
+            It is my pleasure to present {BOOK_TITLE}, a textbook created to support undergraduate
+            learners in their academic journey of developing confident and purposeful communication.
+            This book is shaped by over twenty years of my personal experience in teaching English
+            at all levels, as well as by long-term observation of B1 learners&apos; study styles,
+            interaction patterns, educational challenges and academic progress within a higher
+            education context.
           </p>
           <p>
-            This teaching resource is closely aligned with Common European Framework of References
-            (CEFR) B1 descriptors as well as well informed by the Cambridge TKT framework, ensuring
-            internationally relevant, sound and state-of-art methodology. Moreover, it reflects core
-            TESOL and ELT principles, including strong reliance on communicative language teaching,
-            task-based learning, learner autonomy, and reflective practice based on critical
-            thinking tasks. Altogether, these principles are applied in a practical, student-centered
-            classroom approach, allowing students to engage actively with language rather than learn
-            it theoretically.
+            This textbook is closely aligned with Common European Framework of References (CEFR) B1
+            descriptors as well as well-informed by the Cambridge TKT framework, ensuring
+            internationally relevant, sound and state-of-the-art methodology. Moreover, it reflects
+            core TESOL and ELT principles, including strong reliance on communicative language
+            teaching, task-based learning, learner autonomy, and reflective practice based on
+            critical thinking tasks. Altogether, these principles are applied in a practical,
+            student-centred classroom approach, allowing students to engage actively with language
+            rather than learn it theoretically.
           </p>
           <p>
             Listening, reading, speaking, and writing skills are equally integrated into each unit
@@ -40,27 +40,30 @@ export default function AboutBook() {
             immediately followed by a meaningful output, helping learners build a balanced focus on
             fluency and accuracy at the same time. Topical vocabulary, idioms, proverbs and
             functional language are presented in level-specific context as well as recycled through
-            various tasks to encourage classroom engagement and real world language use.
+            various tasks to encourage classroom engagement and real-world language use.
           </p>
           <p>
-            Texts and listening activities are based on exposure to authentic, native-speaker
+            Texts and Listening activities are based on exposure to authentic, native-speaker
             sources, offering natural language in real academic and social communication samples.
             There is a particular focus on Critical Thinking and Academic Writing that are carefully
-            scaffolded to guide students with step-by-step coherent writing:
-            topic/supporting/concluding sentence paragraphs and academic essays.
+            scaffolded to guide students with step-by-step coherent writings:
+            punctuation/capitalization rules → topic/supporting/concluding sentences → paragraphs →
+            academic essays.
           </p>
           <p>
-            Moreover, the teaching aid creates modern learning environments suggesting thoughtful use
-            of multiple digital resources and global online study platforms. Selected educational AI
-            tools are ethically included only as supportive aids for feedback and layout, with full
-            academic integrity respect and copyright. Here, technology is used to enhance learning,
-            not to replace it.
+            Moreover, the teaching resource creates modern learning environments, suggesting
+            thoughtful use of multiple digital resources and global online study platforms. Selected
+            educational AI tools are used ethically only as supportive aids for feedback and layout,
+            with full respect for academic integrity and copyright. Here, technology is used to
+            enhance learning, not to replace it.
           </p>
           <p>
-            Overall, this teaching resource is flexible, student-centred and teacher-friendly, due to
-            its easy adaptability to different institutional contexts and teaching and learning
-            styles. My hope is that it will help learners use academic English with clear purpose and
-            confidence while making the study process engaging and enjoyable.
+            Overall, this textbook is flexible, student-centred and teacher-friendly, due to its
+            easy adaptability to different institutional contexts and diverse teaching and learning
+            styles. I sincerely hope that this textbook will achieve its main goal and help learners
+            use academic English with confidence and a clear sense of purpose, while making the
+            learning process more engaging, enjoyable, and meaningful for both students and
+            teachers.
           </p>
         </div>
 

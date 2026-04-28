@@ -15,7 +15,7 @@ import './App.css';
 const NAV_ITEMS = [
   { to: '/listenings', label: 'Recordings', match: (p) => p === '/listenings' },
   { to: '/listening-scripts', label: 'Scripts', match: (p) => p === '/listening-scripts' || p.startsWith('/scripts/unit/') },
-  { to: '/about/book', label: 'About the Book', match: (p) => p === '/about/book' },
+  { to: '/about/book', label: 'About the Textbook', match: (p) => p === '/about/book' },
   { to: '/about/author', label: 'About the Author', match: (p) => p === '/about/author' },
 ];
 

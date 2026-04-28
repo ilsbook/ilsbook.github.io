@@ -153,7 +153,7 @@ export default function AboutAuthor() {
             ← Listening exercises
           </Link>
           <Link to="/about/book" className="about-footer-nav__link">
-            About the book →
+            About the textbook →
           </Link>
         </footer>
       </article>

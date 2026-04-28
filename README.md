@@ -6,6 +6,6 @@
 
 This textbook is a **CEFR B1** teaching resource for undergraduates: listening, reading, speaking, and writing are integrated in each unit, with authentic input, task-based work, and careful support for critical thinking and academic writing. Methodology aligns with the CEFR and draws on the Cambridge TKT framework, communicative language teaching, and learner-centred classroom practice.
 
-**This repository** hosts the companion website: unit listening tracks, downloads, and pages about the book and the author.
+**This repository** hosts the companion website: unit listening tracks, downloads, and pages about the textbook and the author.
 
 **Live site:** [ilsb1.github.io](https://ilsb1.github.io/)
