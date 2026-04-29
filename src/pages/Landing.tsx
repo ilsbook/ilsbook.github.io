@@ -44,7 +44,7 @@ export default function Landing() {
                 <br />
                 <strong>3. Overview:</strong> Visit{" "}
                 <Link to="/about/book" className="landing-inline-link">
-                  About the textbook
+                  About the book
                 </Link>{" "}
                 for more information.
                 <br />

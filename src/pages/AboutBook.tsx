@@ -6,7 +6,7 @@ export default function AboutBook() {
   return (
     <div className="about-page">
       <div className="page-header">
-        <h2 className="page-title">About the Textbook</h2>
+        <h2 className="page-title">About the Book</h2>
         <p className="page-subtitle">{BOOK_TITLE}</p>
       </div>
 
@@ -17,7 +17,7 @@ export default function AboutBook() {
 
         <div className="about-prose about-text-block about-text-block--flush">
           <p>
-            It is my pleasure to present {BOOK_TITLE}, a textbook created to support undergraduate
+            It is my pleasure to present {BOOK_TITLE}, a teaching resource created to support undergraduate
             learners in their academic journey of developing confident and purposeful communication.
             This book is shaped by over twenty years of my personal experience in teaching English
             at all levels, as well as by long-term observation of B1 learners&apos; study styles,
@@ -25,7 +25,7 @@ export default function AboutBook() {
             education context.
           </p>
           <p>
-            This textbook is closely aligned with Common European Framework of References (CEFR) B1
+            This teaching resource is closely aligned with Common European Framework of References (CEFR) B1
             descriptors as well as well-informed by the Cambridge TKT framework, ensuring
             internationally relevant, sound and state-of-the-art methodology. Moreover, it reflects
             core TESOL and ELT principles, including strong reliance on communicative language
@@ -58,9 +58,9 @@ export default function AboutBook() {
             enhance learning, not to replace it.
           </p>
           <p>
-            Overall, this textbook is flexible, student-centred and teacher-friendly, due to its
+            Overall, this book is flexible, student-centred and teacher-friendly, due to its
             easy adaptability to different institutional contexts and diverse teaching and learning
-            styles. I sincerely hope that this textbook will achieve its main goal and help learners
+            styles. I sincerely hope that this book will achieve its main goal and help learners
             use academic English with confidence and a clear sense of purpose, while making the
             learning process more engaging, enjoyable, and meaningful for both students and
             teachers.
