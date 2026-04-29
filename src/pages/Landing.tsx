@@ -24,7 +24,7 @@ export default function Landing() {
             </h2>
             <div className="landing-prose">
               <p>
-                A CEFR B1 coursebook for undergraduates: reading/listening and speaking/writing are
+                A CEFR B1 teaching resource for undergraduates: reading/listening and speaking/writing are
                 developed in parallel across units, with structured work in critical thinking and
                 academic writing, and recurrent attention to vocabulary in use, idioms in use, and
                 proverbs in use.  
