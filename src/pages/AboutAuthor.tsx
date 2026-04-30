@@ -121,8 +121,8 @@ export default function AboutAuthor() {
             <p>
               In addition to her teaching responsibilities, Dr. Hasanova has held several important
               academic and administrative roles. Since 2019, she has served as the Head of the
-              Language Skills discipline and is a certified specialist in online and distance
-              education. She is also a member of the Oral Speech Examination Commission (since 2024)
+              Language Skills discipline and is a certified specialist in online and distant
+              learning. She is also a member of the Oral Speech Examination Commission (since 2024)
               and the Teacher Attestation Commission (since 2025). In 2013, she represented the
               Azerbaijan University of Languages on the Expert Council of the State Program on
               Education Abroad.
@@ -149,11 +149,11 @@ export default function AboutAuthor() {
         </div>
 
         <footer className="about-footer-nav">
-          <Link to="/listenings" className="about-footer-nav__link about-footer-nav__link--secondary">
-            ← Listening exercises
+          <Link to="/about/book" className="about-footer-nav__link about-footer-nav__link--secondary">
+            ← About the book
           </Link>
-          <Link to="/about/book" className="about-footer-nav__link">
-            About the book →
+          <Link to="/copyright" className="about-footer-nav__link">
+            Copyright &amp; credits →
           </Link>
         </footer>
       </article>

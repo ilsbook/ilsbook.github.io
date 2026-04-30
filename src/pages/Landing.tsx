@@ -53,6 +53,12 @@ export default function Landing() {
                   About the author
                 </Link>{" "}
                 for biographical context.
+                <br />
+                <strong>5. Copyright:</strong> See the{" "}
+                <Link to="/copyright" className="landing-inline-link">
+                  Copyright &amp; credits
+                </Link>{" "}
+                page for the imprint and rights notice.
               </p>
             </div>
           </div>

@@ -7,6 +7,7 @@ import ListeningScripts from './pages/ListeningScripts';
 import ScriptUnit from './pages/ScriptUnit';
 import AboutBook from './pages/AboutBook';
 import AboutAuthor from './pages/AboutAuthor';
+import Copyright from './pages/Copyright';
 import { BOOK_TITLE, SITE_TITLE_SHORT } from './constants/bookMeta';
 import StickyPlayer from './components/StickyPlayer';
 import { PlayerProvider } from './player/PlayerContext';
@@ -17,6 +18,7 @@ const NAV_ITEMS = [
   { to: '/listening-scripts', label: 'Scripts', match: (p) => p === '/listening-scripts' || p.startsWith('/scripts/unit/') },
   { to: '/about/book', label: 'About the Book', match: (p) => p === '/about/book' },
   { to: '/about/author', label: 'About the Author', match: (p) => p === '/about/author' },
+  { to: '/copyright', label: 'Copyright', match: (p) => p === '/copyright' },
 ];
 
 function App() {
@@ -147,11 +149,17 @@ function App() {
             <Route path="/about" element={<Navigate to="/about/book" replace />} />
             <Route path="/about/book" element={<AboutBook />} />
             <Route path="/about/author" element={<AboutAuthor />} />
+            <Route path="/copyright" element={<Copyright />} />
           </Routes>
         </main>
 
         <footer className="footer" role="contentinfo">
-          <p>&copy; {new Date().getFullYear()} {BOOK_TITLE}</p>
+          <p>
+            &copy; {new Date().getFullYear()} {BOOK_TITLE} &middot;{' '}
+            <Link to="/copyright" className="footer-link">
+              Copyright &amp; credits
+            </Link>
+          </p>
         </footer>
         <StickyPlayer />
       </div>
