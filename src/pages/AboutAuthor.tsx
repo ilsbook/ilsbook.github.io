@@ -6,7 +6,9 @@ const authorPhoto = new URL("../assets/author.jpg", import.meta.url).href;
 const RESEARCH_INTERESTS = [
   "Linguistics",
   "Lexicology",
-  "Linguaculturology",
+  "Stylistics",
+    "Inclusive Education",
+    "Linguaculturology",
   "Large Language Models (LLMs)",
   "Natural Language Processing (NLP)",
   "Integration of Ethical AI in ELT",
@@ -97,9 +99,9 @@ export default function AboutAuthor() {
             <p>
               Dr. Hasanova holds a PhD in Philology (2016) from the Azerbaijan University of
               Languages, where she defended her dissertation entitled &ldquo;The Communicative
-              Aspect of Literary Text as a Unit of Culture.&rdquo; She also completed her MA (2006)
-              and BA (2003) degrees in English Language at the same institution, graduating with
-              highest honours (GPA 4.0) in both programs.
+              Aspect of Literary Text as a Unit of Culture.&rdquo; She also completed her MA (2006) 
+              and BA (2003) in English Language at the same institution, receiving full state 
+              scholarships and graduating with highest honours in both programmes, with a GPA of 4.0/4.0.
             </p>
           </section>
 
@@ -139,7 +141,7 @@ export default function AboutAuthor() {
           </section>
 
           <section className="author-bio__section">
-            <h3 className="author-bio__heading">Research interests</h3>
+            <h3 className="author-bio__heading">Research interests and certifications</h3>
             <ul className="author-research-list">
               {RESEARCH_INTERESTS.map((item) => (
                 <li key={item}>{item}</li>
